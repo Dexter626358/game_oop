@@ -1,11 +1,10 @@
 package Heroes;
 
-public class Warlock extends BaseHero{
-    private int magicPower;
+public class Warlock extends Magician{
 
-    public Warlock(String name, int health, int speed, int magicPower) {
-        super(name, health, speed);
-        this.magicPower = magicPower;
+
+    public Warlock(String name) {
+        super(10, 20, 30, 4, 5, 6, name);
     }
 
     @Override
@@ -21,5 +20,10 @@ public class Warlock extends BaseHero{
     @Override
     void health() {
 
+    }
+
+    @Override
+    public String getInfo() {
+        return "Колдун " + name;
     }
 }

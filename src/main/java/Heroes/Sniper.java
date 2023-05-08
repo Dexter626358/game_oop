@@ -1,16 +1,18 @@
 package Heroes;
 
-public class Peasant extends Human{
-    //private int strength;
+public class Sniper extends Archer{
 
-    public Peasant(String name){
-        super(20, 30, 40, 50, 0, name);
+
+    public Sniper(String name) {
+        super(1,1,1,1,1,1, name);
     }
 
     @Override
     public String getInfo() {
-        return "Крестьянин " + name;
+        return "Арболетчик " + name;
     }
+
+
 
     @Override
     void attack() {

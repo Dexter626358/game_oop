@@ -1,9 +1,8 @@
 package Heroes;
 
-abstract class BaseHero {
-    protected String name;
-    protected int health;
-    protected int speed;
+public abstract class BaseHero implements InGameInterface {
+    protected int hp, maxHp, att, def;
+
 //    protected int endurance;
 //    protected int strength;
 //    protected int agility;
@@ -14,15 +13,35 @@ abstract class BaseHero {
 //    protected boolean weapon_skills;
 
 
-    public BaseHero(String name, int health, int speed) {
-        this.name = name;
-        this.health = health;
-        this.speed = speed;
+    public BaseHero(int hp, int maxHp, int att, int def) {
+        this.hp = hp;
+        this.maxHp = maxHp;
+        this.att = att;
+        this.def = def;
     }
+
+
+    public int getHp(){
+        return hp;
+    }
+    public void setHp(int hp){
+        if (hp > 0) this.hp = hp;
+    }
+
 
     abstract void attack();
     abstract void defense();
     abstract void health();
+
+    @Override
+    public void step() {
+
+    }
+
+    @Override
+    public String getInfo() {
+        return null;
+    }
 }
 
 

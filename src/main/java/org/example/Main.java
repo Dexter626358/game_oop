@@ -2,15 +2,23 @@ package org.example;
 
 import Heroes.*;
 
+import java.util.ArrayList;
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args) {
-
-        Peasant peasant1 = new Peasant("Nick", 30, 40, 50);
-        Bandit bandit1 = new Bandit("Mark", 30, 40, 50);
-        Snaper snaper1 = new Snaper("Sergio", 30, 40, 50);
-        Warlock warlock1 = new Warlock("Demon", 30, 40, 50);
-        Spearman spearman1 = new Spearman("Anis", 30, 40, 50);
-        Crossbowman crossbowman = new Crossbowman("Alex", 30, 40, 50);
-        Monk monk1 = new Monk("Iris", 30, 40, 50);
+        Sniper archer = new Sniper("Ваня");
+        ArrayList<BaseHero> list = new ArrayList<>();
+        list.add(new XBowMan(getName()));
+        list.add(new Sniper(getName()));
+        list.add(new Peasant(getName()));
+        list.add(new Bandit(getName()));
+        list.add(new Monk(getName()));
+        list.add(new Warlock(getName()));
+        list.add(new Spearman(getName()));
+        list.forEach(n -> System.out.println(n.getInfo()));
+    }
+    private static String getName(){
+        return String.valueOf(Names.values()[new Random().nextInt(Names.values().length)]);
     }
 }

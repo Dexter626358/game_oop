@@ -1,11 +1,10 @@
 package Heroes;
 
-public class Bandit extends BaseHero{
-    private int agility;
+public class Bandit extends Human{
 
-    public Bandit(String name, int health, int speed, int agility) {
-        super(name, health, speed);
-        this.agility = agility;
+
+    public Bandit(String name) {
+        super(10, 20, 0, 30, 20, name);
     }
 
     @Override
@@ -21,5 +20,10 @@ public class Bandit extends BaseHero{
     @Override
     void health() {
 
+    }
+
+    @Override
+    public String getInfo() {
+        return "Бандит " + name;
     }
 }

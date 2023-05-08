@@ -1,12 +1,15 @@
 package Heroes;
 
-public class Spearman extends BaseHero{
-    private int spearLength;
+public class Spearman extends Throwers{
 
-    public Spearman(String name, int health, int speed, int spearLength) {
-        super(name, health, speed);
-        this.spearLength = spearLength;
+
+    public Spearman(String name) {
+        super(1, 1, 1, 1, 1, name);
+
     }
+
+
+
 
     @Override
     void attack() {
@@ -21,5 +24,10 @@ public class Spearman extends BaseHero{
     @Override
     void health() {
 
+    }
+
+    @Override
+    public String getInfo() {
+        return "Копейщик " + name;
     }
 }
