@@ -1,19 +1,14 @@
 package Heroes;
 
 public abstract class Archer extends BaseHero{
-    int shots, maxShots;
-    protected String name;
+    int shots;
 
-    public Archer(int hp, int maxHp, int att, int def, int shots, int maxShots, String name) {
-        super(hp, maxHp, att, def);
+    public Archer(String name, int health, int minDamage, int maxDamage, int speed, int attack, int protection, int shots) {
+        super(name, health, minDamage, maxDamage, speed, attack, protection);
         this.shots = shots;
-        this.maxShots = maxShots;
-        this.name = name;
     }
 
-    public int getAtt(){
-        return super.att;
-    }
+
 
     @Override
     void attack() {

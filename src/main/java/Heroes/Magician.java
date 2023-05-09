@@ -1,16 +1,13 @@
 package Heroes;
 
 public class Magician extends BaseHero{
-    private int magicPower;
-    private int meditationLevel;
-    protected String name;
+    private int mana;
 
-    public Magician(int hp, int maxHp, int att, int def, int magicPower, int meditationLevel, String name) {
-        super(hp, maxHp, att, def);
-        this.magicPower = magicPower;
-        this.meditationLevel = meditationLevel;
-        this.name = name;
+    public Magician(String name, int health, int minDamage, int maxDamage, int speed, int attack, int protection, int mana) {
+        super(name, health, minDamage, maxDamage, speed, attack, protection);
+        this.mana = mana;
     }
+
 
     @Override
     void attack() {

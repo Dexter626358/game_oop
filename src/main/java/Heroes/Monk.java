@@ -4,7 +4,7 @@ public class Monk extends Magician{
 
 
     public Monk(String name) {
-        super(10, 20, 20, 30, 5, 4, name);
+        super(name, 30, -4, -4, 5, 12, 7,1);
     }
 
     @Override

@@ -4,7 +4,7 @@ public class Bandit extends Human{
 
 
     public Bandit(String name) {
-        super(10, 20, 0, 30, 20, name);
+        super(name, 10,2,4,6,8,3);
     }
 
     @Override

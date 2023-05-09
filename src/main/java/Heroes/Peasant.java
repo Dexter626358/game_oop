@@ -1,10 +1,11 @@
 package Heroes;
 
 public class Peasant extends Human{
-    //private int strength;
+    private int delivery;
 
     public Peasant(String name){
-        super(20, 30, 40, 50, 0, name);
+        super(name, 1, 1, 1,3, 1,1);
+        this.delivery = 1;
     }
 
     @Override

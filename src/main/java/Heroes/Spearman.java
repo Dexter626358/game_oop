@@ -4,7 +4,7 @@ public class Spearman extends Throwers{
 
 
     public Spearman(String name) {
-        super(1, 1, 1, 1, 1, name);
+        super(name, 10, 1,3,4,4, 5);
 
     }
 

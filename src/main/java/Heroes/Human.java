@@ -1,13 +1,10 @@
 package Heroes;
 
 public class Human extends BaseHero{
-    protected String name;
-    private int agility;
 
-    public Human(int hp, int maxHp, int att, int def, int agility, String name) {
-        super(hp, maxHp, att, def);
-        this.name = name;
-        this.agility = agility;
+
+    public Human(String name, int health, int minDamage, int maxDamage, int speed, int attack, int protection) {
+        super(name, health, minDamage, maxDamage, speed, attack, protection);
     }
 
     @Override

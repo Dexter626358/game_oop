@@ -1,31 +1,29 @@
 package Heroes;
 
 public abstract class BaseHero implements InGameInterface {
-    protected int hp, maxHp, att, def;
-
-//    protected int endurance;
-//    protected int strength;
-//    protected int agility;
-//    protected boolean terrain_knowledge;
-//    protected boolean ballistics_knowledge;
-//    protected boolean religion_knowledge;
-//    protected boolean magic_ability;
-//    protected boolean weapon_skills;
+    protected int health, speed, minDamage, maxDamage, attack, protection;
+    protected String name;
 
 
-    public BaseHero(int hp, int maxHp, int att, int def) {
-        this.hp = hp;
-        this.maxHp = maxHp;
-        this.att = att;
-        this.def = def;
+
+
+    public BaseHero(String name, int health, int minDamage, int maxDamage, int speed, int attack, int protection) {
+        this.name = name;
+        this.health = health;
+        this.minDamage = minDamage;
+        this.maxDamage = maxDamage;
+        this.speed = speed;
+        this.attack = attack;
+        this.protection = protection;
+
     }
 
 
-    public int getHp(){
-        return hp;
+    public int getHealth(){
+        return health;
     }
-    public void setHp(int hp){
-        if (hp > 0) this.hp = hp;
+    public void setHealth(int helth){
+        if (helth > 0) this.health = helth;
     }
 
 

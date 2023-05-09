@@ -2,7 +2,7 @@ package Heroes;
 
 public class XBowMan extends Archer {
     public XBowMan(String name) {
-        super(1,1,1,1,1,1, name);
+        super(name, 10, 2, 3, 4,6,3,16);
     }
 
     @Override

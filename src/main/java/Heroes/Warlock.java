@@ -4,7 +4,7 @@ public class Warlock extends Magician{
 
 
     public Warlock(String name) {
-        super(10, 20, 30, 4, 5, 6, name);
+        super(name, 30, -5, -5, 9,17,12, 1);
     }
 
     @Override

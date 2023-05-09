@@ -1,13 +1,10 @@
 package Heroes;
 
 public class Throwers extends BaseHero{
-    protected String name;
-    protected int spearLength;
 
-    public Throwers(int hp, int maxHp, int att, int def, int spearLength, String name) {
-        super(hp, maxHp, att, def);
-        this.name = name;
-        this.spearLength = spearLength;
+
+    public Throwers(String name, int health, int minDamage, int maxDamage, int speed, int attack, int protection) {
+        super(name, health, minDamage, maxDamage, speed, attack, protection);
     }
 
     @Override
